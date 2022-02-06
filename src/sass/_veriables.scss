@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'General',sans-serif;
+    src: url('../fonts/GeneralSans-Extralight.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Mattone',sans-serif;
+    src: url('../fonts/Mattone-150.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'First' ,sans-serif;
+    src: url('../fonts/Roboto-Regular.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'FirstBold',sans-serif;
+    src: url('../fonts/Roboto-Medium.otf') format('otf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+$primaryfonts:'Mattone';
+$secondaryfonts:'General';
+$firstfonst:'First';
+$firstBold:'FirstBold';

@@ -1,0 +1,39 @@
+{
+  "name": "parcel-project-template",
+  "version": "1.1.0",
+  "description": "## Скрытые файлы",
+  "main": "index.js",
+  "homepage": "https://github.com/Vidiborets/medical-parcel",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /medical-parcel/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "pnotify": "^5.2.0",
+    "posthtml-include": "^1.7.1",
+    "sass": "^1.42.0"
+  },
+  "dependencies": {
+    "@pnotify/core": "^5.2.0",
+    "bootstrap.native": "^4.0.6",
+    "css-loader": "^6.2.0",
+    "handlebars": "^4.7.7",
+    "html-includes": "^4.4.1",
+    "lodash.debounce": "^4.0.8",
+    "material-design-icons": "^3.0.1",
+    "scss": "^0.2.4"
+  }
+}

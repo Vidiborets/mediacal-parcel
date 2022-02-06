@@ -1,0 +1,221 @@
+
+.containerForm{
+    @media screen and (min-width:320px) and (max-width:767px){
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 100px;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        width: 768px;
+        margin: 0 auto;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 100px;
+    }
+    @media screen and (min-width: 1200px){
+        max-width: 1440px;
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex: auto;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 100px;
+    }
+}
+.sectionForm{
+    display: flex;
+}
+.containerLogo{
+    margin-right: 40px;
+}
+.adressInfo{
+    @media screen and (min-width: 1200px){
+        width: 237px;
+    }
+    
+}
+.adressTitle{
+    font-family: $secondaryfonts;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.addressText{
+    font-family: $secondaryfonts;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.72;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.item{
+    display: flex;
+    align-items: baseline;
+}
+.itemTitle{
+    width: 67px;
+    color: #008CFF;
+    font-family: $secondaryfonts;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.72;
+    margin-right: 10px;
+}
+.itemTextInfo{
+    font-family: $secondaryfonts;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.72;
+    color: #000000;
+}
+.boxForm{
+    @media screen and (min-width: 1200px){
+        width: 510px;
+    }
+    
+}
+.formSection{
+    margin-bottom: 25px;
+}
+.form_body{
+    position: relative;
+}
+.form_body::after{
+    content: '';
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51,51,51,0.9) url('../images/Spinner-1s-200px.gif') center/50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+}
+.form_body._sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+.formlabel{
+    display: inline-block;
+    font-family: $secondaryfonts;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: $text-color;
+}
+.forminput{
+    display: block;
+    width: 100%;
+    height: 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 140, 255, 0.15);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    @media screen and (min-width: 1200px){
+        max-width: 510px;
+    }
+}
+.formArea{
+    display: block;
+    width: 100%;
+    height: 84px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    box-shadow: 0px 5px 30px rgba(0, 140, 255, 0.15);
+    border-radius: 5px;
+    resize: vertical;
+    @media screen and (min-width: 1200px){
+        max-width: 510px;
+    }
+}
+.sectionFormButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttonForm{
+    width: 82px;
+    height: 42px;
+    background: #008CFF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: $secondaryfonts;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.37;
+    border: none;
+    &:hover{
+        color: #fff;
+        background-color: #FF008C;
+    }
+}
+.containerFormFile{
+    position: relative;
+    
+}
+
+s.req{
+    outline: none;
+}
+.labelFormFile{
+    display: flex;
+    width: 180px;
+    height: 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 140, 255, 0.15);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover ,
+    &:hover .formTextButton{
+        color: #fff;
+        background-color: #FF008C;
+    }
+}
+.formInputFile{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+.formTextButton{
+    font-family: $secondaryfonts;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.37;
+    color: #008CFF;
+    margin-left: 10px;
+   
+}
+
+.forminput._error{
+    box-shadow: 0 0 15px red;
+}
+.form_preview{
+    width: 100px;
+    margin-top: 20px;
+    display: flex;
+
+}

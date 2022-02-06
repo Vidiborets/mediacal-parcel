@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Мастерская: промпт подписки</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+  crossorigin="anonymous" />
+<link rel="stylesheet" href="./sass/main.scss" />
+</head>
+<body>
+  <section>
+    <div class='containerForm'>
+      <div class='sectionForm'>
+          <div class="containerLogo">
+              <img src='./images/Logofull.png' alt="Logo" />
+          </div>
+          <address class="adressInfo" id='adress'>
+              <h3 class="adressTitle">WORK-MED</h3>
+              <p class="addressText">
+                  46006  Тернопіль , вул. Білогірська 18 в /оф 157
+              </p>
+              <ul class="list">
+                  <li class="item">
+                      <span class="itemTitle">
+                          <p class="itemTitleInfo">TEL.</p>
+                      </span>
+                      <span class="itemText">
+                          <p class="itemTextInfo">+380965297750</p>
+                      </span>
+                  </li>
+                  <li class="item">
+                      <span class="itemTitle">
+                          <p class="itemTitleInfo">TEL.</p>
+                      </span>
+                      <span class="itemText">
+                          <p class="itemTextInfo">+380957092126</p>
+                      </span>
+                  </li>
+                  <li class="item">
+                      <span class="itemTitle">
+                          <p class="itemTitleInfo">MAIL</p>
+                      </span>
+                      <span class="itemText">
+                          <p class="itemTextInfo">larssonternopol@ukr.net</p>
+                      </span>
+                  </li>
+                  <li class="item">
+                      <span class="itemTitle">
+                          <p class="itemTitleInfo">MAIL</p>
+                      </span>
+                      <span class="itemText">
+                          <p class="itemTextInfo">a.r.kompromis@gmail.com</p>
+                      </span>
+                  </li>
+              </ul>
+          </address> 
+      </div>
+      <div class="boxForm">
+          <form id='form' action="#" class="form_body" >
+              <div class="formSection">
+                  <label class="formlabel"  htmlFor='name'>Ім'я та прізвище</label>
+                  <input class="forminput _req" type="text" name='name' id='name'  />
+              </div>
+              <div class="formSection">
+                  <label class="formlabel" htmlFor="phone">Номер телефону</label>
+                  <input class="forminput _req" type="tel" name='phone' id='phone'  />
+              </div>
+              <div class="formSection">
+                  <label class="formlabel" htmlFor="email">Адреса email</label>
+                  <input class="forminput _req _email" type="email"  name='email' id='email'  />
+              </div>
+              <div class="formSection">
+                  <label class="formlabel" htmlFor="subject">Тема</label>
+                  <input class="forminput _req" type="text" name='subject' id='subject'  />
+              </div>
+              <div class="formSection">
+                  <label class="formlabel" htmlFor="text">ВМІСТ ПОВІДОМЛЕННЯ</label>
+                  <textarea class="formArea _req" type="text" name='text' ></textarea>
+              </div>
+              <div class="formSection">
+                  <input class="forminputChekbox" checked type="checkbox" id='check'/>
+                  <label class="formChekbox _req" for="check">
+                      Согласен(a) на обработку персональных данных
+                      <a class="formLink" href="/"></a>
+                  </label>
+              </div>
+                  <div class="sectionFormButton">
+                      <button type='submit' class="buttonForm">Відправіті</button>
+                      <div class="containerFormFile">
+                        <label class="labelFormFile" htmlFor="formImage">
+                          <span class="FormSectionFile">
+                              <img src='./images/icon-attach.svg' alt="Закрепите файл" />
+                          </span>
+                          <span class='formTextButton'>Закрепити файл</span>
+                          <input class="formInputFile" type="file" id="formImage" name="image" accept=".jpg, .png, .gif"/> 
+                        </label>
+                      </div>
+                  </div>
+                  <div class="form_preview" id='formPreview'></div> 
+          </form>
+      </div>
+  </div>
+</section>
+  <script src="./index.js"></script>
+</body>
+</html>
+
