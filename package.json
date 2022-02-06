@@ -24,7 +24,7 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "pnotify": "^5.2.0",
     "posthtml-include": "^1.7.1",
-    "sass": "^1.42.0"
+    "sass": "^1.49.7"
   },
   "dependencies": {
     "@pnotify/core": "^5.2.0",
